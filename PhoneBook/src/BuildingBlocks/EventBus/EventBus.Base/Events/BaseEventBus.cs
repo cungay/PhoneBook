@@ -92,6 +92,7 @@ namespace EventBus.Base.Events
         public virtual void Dispose()
         {
             config = null;
+            SubManager.Clear();
         }
 
         #endregion
