@@ -7,6 +7,7 @@ namespace EventBus.RabbitMQ
     {
         public EventBusRabbitMQ(EventBusConfig config, IServiceProvider serviceProvider) : base(config, serviceProvider)
         {
+
         }
 
         public override void Publish(IntegrationEvent @event)
