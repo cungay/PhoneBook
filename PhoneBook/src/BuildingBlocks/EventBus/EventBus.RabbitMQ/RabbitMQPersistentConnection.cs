@@ -76,17 +76,20 @@ namespace EventBus.RabbitMQ
 
         private void OnConnectionShutdown(object? sender, ShutdownEventArgs e)
         {
-            throw new NotImplementedException();
+            if (disposed) return;
+            TryConnect();
         }
 
         private void OnCallbackException(object? sender, global::RabbitMQ.Client.Events.CallbackExceptionEventArgs e)
         {
-            throw new NotImplementedException();
+            if (disposed) return;
+            TryConnect();
         }
 
         private void OnConnectionBlocked(object? sender, global::RabbitMQ.Client.Events.ConnectionBlockedEventArgs e)
         {
-            throw new NotImplementedException();
+            if (disposed) return;
+            TryConnect();
         }
 
         #endregion
@@ -96,7 +99,7 @@ namespace EventBus.RabbitMQ
         public void Dispose()
         {
             disposed = true;
-            throw new NotImplementedException();
+            connection.Dispose();
         }
 
         #endregion
