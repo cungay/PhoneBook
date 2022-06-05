@@ -1,12 +1,12 @@
 ﻿using System.Text;
+using System.Net.Sockets;
 using EventBus.Base;
 using EventBus.Base.Events;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using Newtonsoft.Json;
-using Polly;
 using RabbitMQ.Client.Exceptions;
-using System.Net.Sockets;
+using Polly;
+using Newtonsoft.Json;
 
 namespace EventBus.RabbitMQ
 {
