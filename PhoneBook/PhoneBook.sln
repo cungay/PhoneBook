@@ -55,6 +55,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.UnitTest", "tests\BuildingBlocks\EventBus.UnitTest\EventBus.UnitTest.csproj", "{5DFC7C0A-910C-4F52-B91E-EF878B0D3594}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NotificationService", "NotificationService", "{4800DDF4-F4AC-4C68-8AF5-5D4E7073C4A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,7 @@ Global
 		{87BFD01F-3DE0-42E2-88D2-086509A090A1} = {96DEE848-E687-4252-BC0D-A20CE6172B68}
 		{72A146D8-FB0D-4C1F-AC99-104F3BAEECBC} = {D8580669-075D-48B5-AA8B-505F84957CF6}
 		{5DFC7C0A-910C-4F52-B91E-EF878B0D3594} = {72A146D8-FB0D-4C1F-AC99-104F3BAEECBC}
+		{4800DDF4-F4AC-4C68-8AF5-5D4E7073C4A1} = {DC52F862-D820-498B-9895-198D0CA441F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F908670-26A8-49D7-A68B-71F3ECA4204D}
